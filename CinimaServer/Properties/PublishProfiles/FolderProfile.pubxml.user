@@ -4,1331 +4,1349 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\HP\Desktop\svcy.myclass.vn\CinimaServer\CinimaServer\bin\app.publish\</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\ASUS\Desktop\cybersoft\svcy.myclass.vn\CinimaServer\bin\app.publish\</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/HelpPage.css">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/Web.config">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="bin/AutoMapper.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="bin/BinaryMediaTypeFormatter.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/CinimaServer.dll">
-      <publishTime>06/13/2022 03:42:30</publishTime>
+      <publishTime>07/22/2023 12:46:23</publishTime>
     </File>
     <File Include="bin/CinimaServer.pdb">
-      <publishTime>06/13/2022 03:42:30</publishTime>
+      <publishTime>07/22/2023 12:46:23</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>06/13/2022 02:52:32</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="bin/EntityFramework.SqlServer.dll">
-      <publishTime>06/13/2022 02:52:32</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>07/22/2023 12:04:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>07/22/2023 12:04:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>07/22/2023 12:04:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>07/22/2023 12:04:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>07/22/2023 12:04:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Cors.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Google.dll">
-      <publishTime>06/13/2022 02:52:32</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Owin.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/Swashbuckle.Core.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Cors.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Http.Cors.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>06/13/2022 02:52:32</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Http.Owin.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>06/13/2022 02:52:30</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/WebActivatorEx.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/WebApiContrib.Formatting.Jsonp.dll">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/WebApiContrib.Formatting.Jsonp.pdb">
-      <publishTime>06/13/2022 02:52:31</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:59</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>06/13/2022 02:52:09</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>06/13/2022 02:52:09</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>06/13/2022 02:52:09</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.svg">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="images/background.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/antman.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/background.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/batmanvssuperman.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/betafish.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/edgeoftomorrow.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/fantasticfour.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/home.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/insideout.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/jurassicworld.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/madmax.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/minions.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/southpaw.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/spectre.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/ted2.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/thelongestride.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/thewalkingdead.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/trainwreck.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/truedetective.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/unknown.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/movies/Wallpaper 8.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/qltt/c.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/qltt/dd.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/qltt/frontend.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/qltt/web.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/raty/star-half-big.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/raty/star-half.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/raty/star-off-big.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/raty/star-off.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/raty/star-on-big.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/raty/star-on.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/0201_Sonyvaiopro13-1.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/1-141023232635.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/1.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/12226700_1009231122431681_1745030512_n.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/12231372_1009226802432113_1184438083_n.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/1397272_5b1684c5cdf18acf2aa3d4478c3b3975.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/150608_iphone_concept_1.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/321321.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/324493-sony-vaio-pro-11.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/ACER-2215i.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerA1-810-2CW-316T.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerA1-811-G2CG-316T.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerA101-16GB.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerA101-Red.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerB1-A71-83170501NK.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerE1-432.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerE1-470-01.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerE1-470-02.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerE1-470G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerE1-472.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerE1-572.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerIconiaTabW511.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerP3-171.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerTAB-A101.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerTAB-A501.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerV3-471.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerV5-471.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerV5-471G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerW501.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerW510-27602G06ISS.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AcerW511-27602G06ASS.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AP-ME294ZP.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMC975ZP-A.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMC976ZP-A.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMD101ZP-A.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMD102ZP-A.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMD103ZP-A.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMD104ZP-A.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMD223ZP-A.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMD224ZP-A.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMD231ZP-A.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AppleMD232ZP-A.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Apple_iPad_Air_Silver_600_lq_0001.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Apple_MBA11_LW007.jpg74ddbdf5-e3ab-4f55-883f-2a7ca1f52652Original.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/ASUS-S1750.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Asus10-ME102A.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/asus3.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/asus4.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusF451CA-VX123D.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/ASUSFONEPADME371MG.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusME175CG-8G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusME180A-8G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusME372CG-16G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusME372CG-8G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusME560CG-1A052A-32G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusME560CG-1B052A-32G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusME571K-1C018A-8G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX450CC-WX009.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX450CC-WX016.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX450L-WX014D.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX450L-WX035D.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX450LA-WX021.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX450LA-WX022D.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX450LC-WX035.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX550CC-XO032D.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/AsusX550LD-XX144D.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/asus_1.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/asus_2.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/b31.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Blackberry9220.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Blackberry9320.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Blackberry9790.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/BlackBerryCurve9220.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/BlackberryQ10.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/BlackberryZ10.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/BlackberryZ30.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubotvip.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubot_x15_1.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubot_x15_2.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubot_x15_3.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubot_x15_4.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubot_x15_5.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubox15_1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubox15_2.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubox15_3.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/cubox15_4.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL-11721PS.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL-9943XL.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL14-3437.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL14R-D8MMY1.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL15-52GNP1.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL15-52GNP4.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL15-7537.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL15-N3521.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL15R-5537.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELL3440.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELLN3437A.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/DELLN5437A.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/design_hero.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyG7102.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyK-Zoom.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyN9000.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyNote-10-P601.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyNote-8-N5100.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyNote3-Neo.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyNotePro-12-2.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyS4-I9500.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyS5.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyS7392.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyS7580.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyTab-3-10-P5200.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyTab-3-8-T311.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyTab-3-Lite7-3G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyTab-3-Lite7-Wifi.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyTab-4-10-T531.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyTab-4-7.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyTab-4-8-T331.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GalaxyY-S5360.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Gear2-Neo.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GoogleNexus7-16G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/GoogleNexus7-32G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP-3175.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP-3421s.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP1000-1404TU.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP1000-1418TU.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP14-b068TX.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP14-d008TU.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP14-d009TU.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP14-d010TU.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP15-D062TU.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP15-N052TX.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP4-1214TU.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HP450-D5J85PA.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTC-8S.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTC-8X.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTC-L.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTC-OneM8.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTC-U.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTC310.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTC700.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTCONE-32G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTCONE-GOLD-32G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTCONE-M8.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/HTCSV.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_1.JPG">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_2.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_2.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_3.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_3.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_4.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_4.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_5.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_6.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_7.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/htc_one_8.JPG">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/ipad air blue.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Ipad-ME840TH.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadAir-32G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadAir-Cellular-128G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadAir-Cellular-16G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadMini-128G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadMini-16G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadMini-32G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadMini-64G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadMini-Cellular-16G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadMini-Cellular-32G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/IpadMini-Cellular-64G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/ipad_air_1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/ipad_air_2.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/ipad_air_3.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/ipad_air_4.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/iphone-6-201421010614.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/iphone-7-concept-display-design-hello_UTMY.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/iPhone-7-Images-8.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone4-8G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone4S-8G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone5-16G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone5-32G.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone5C.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone5S-16G-GOLD.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone5S-16G.PNG">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone5S-32G-GOLD.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Iphone5S-64G.PNG">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/iphone_1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/iphone_2.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/iphone_3.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/iphone_4.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/l84208-macbook-pro-13-inch-43364.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/large_apple_macbook_air_13_inch_retina_3d_model_fbx_c4d_obj_hrc_xsi_max_cb5de0c0-ddf7-4684-896d-7d68ae017f13.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/lg-g-flex-smartphone-leak-photos.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGG-686.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGG-D682.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGG-E988.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGG-Flex.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGG-Pro2.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGG2-32G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGG2-D802-16G.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGG2.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGL70.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGL90.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/LGOptimusSolE730.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/logo.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Lumia920.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/m9plus.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/MacBook-Air-1024x515.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook-air-retina.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook_1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook_2.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook_3.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook_4.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/MacBook_air_11_550.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook_pro_1.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook_pro_2.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook_pro_3.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macbook_pro_4.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/macpro.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/mac_air_1.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/maxresdefault.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/New-Samsung-Rumors.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-1020.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-1320-2.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-1320.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-1520.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-525.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-625.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-630.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-920.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaLumia-925.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/NokiaX.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/perfektes-Smartphone_qu.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/pre-order-iphone6.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Samsung-4401s.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/samsung-galaxy-tab-s-10.5-retail-1-e1419704627986.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/samsung-galaxy-tab-s-best-android-tablets-2015-images.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/samsung-galaxy-tab-s.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Samsung300E7A-S03.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Samsung5-535U3X.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Samsung900X3A.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SAMSUNGGALAXY3LITESM-T111.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SamSunggalaxyS5-SMG900H.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SamsungNP270E4V-K01VN.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SamsungNP270E4V-X01VN.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SamsungNP530U4E-K01VN.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SamsungNP540U4E-K01VN.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SamsungNP700Z3A-S01US.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SamsungNP900X3C.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SamsungXE700T1C-A01VN.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Samsung_Note_Pro_3_0_0 %281%29.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/sony-vaio-sve-1513b1ew.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/sony-vaio-T14_Silver-2.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Sony-Vio7431.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVF14217SGB.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVF1421DSGB.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVF1421ESGB.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVF1421ESGW.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVF1421QSGB.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVF1421QSGW.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVF1521DSGB.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVP13223SGB.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVP13223SGW.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyVaio-SVT11215SGB.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-C-C2305.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-E-C1505.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-E1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-L-C2105.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-L-MT25I.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-M-C1905.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-M2-D2305.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-ST23I.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-TX-LT29I.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-V-LT25I.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-Z.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperia-Z2.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SONYXPERIAZ-SGP321.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SonyXperiaZ.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/SQL.txt">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/tablet_ss_1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/tablet_ss_2.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/tablet_ss_3.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/TOSHIBA-SYM0510.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Ultimate-Smartphone-01 %281%29.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/Ultimate-Smartphone-01.jpg">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/untilmate_phone_1.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/untilmate_phone_2.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/untilmate_phone_3.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/untilmate_phone_4.jpg">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/vaio_1.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/vaio_2.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/vaio_3.png">
-      <publishTime>06/13/2022 02:52:06</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="images/sanpham/vaio_4.png">
-      <publishTime>06/13/2022 02:52:05</publishTime>
+      <publishTime>07/22/2023 12:04:58</publishTime>
     </File>
     <File Include="Models/DBMenu/dbMenuFood.edmx.diagram">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Models/dbQuanLyTrungTamModel.edmx.diagram">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Models/dbSinhVien/dbSinhVien.edmx.diagram">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Models/DBStore/DbStoreModel.edmx.diagram">
       <publishTime>06/13/2022 02:59:31</publishTime>
     </File>
     <File Include="Models/HomeCinimaModel.edmx.diagram">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Models/QLNV/QuanLyNhanVienModel.edmx.diagram">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Models/QuanLyBanHangModel.edmx.diagram">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Models/Task/todolist.edmx.diagram">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:09:04</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.map">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery.unobtrusive-ajax.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
-      <publishTime>06/13/2022 02:52:28</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.min.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.6.2.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/respond.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/respond.min.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>06/13/2022 02:52:29</publishTime>
+      <publishTime>07/22/2023 12:04:57</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/13/2022 03:42:30</publishTime>
+      <publishTime>07/22/2023 12:46:23</publishTime>
     </File>
   </ItemGroup>
 </Project>
