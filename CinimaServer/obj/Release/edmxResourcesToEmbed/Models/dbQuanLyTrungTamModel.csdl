@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLyTrungTamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="QuanLyTrungTamEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="HocVienKhoaHocs" EntityType="QuanLyTrungTamModel.HocVienKhoaHoc" />
+    <EntitySet Name="KhoaHocs" EntityType="QuanLyTrungTamModel.KhoaHoc" />
+    <EntitySet Name="LoaiNguoiDungs" EntityType="QuanLyTrungTamModel.LoaiNguoiDung" />
+    <EntitySet Name="NguoiDungs" EntityType="QuanLyTrungTamModel.NguoiDung" />
+    <EntitySet Name="sysdiagrams" EntityType="QuanLyTrungTamModel.sysdiagram" />
+    <AssociationSet Name="FK_HocVienKhoaHoc_KhoaHoc" Association="QuanLyTrungTamModel.FK_HocVienKhoaHoc_KhoaHoc">
+      <End Role="KhoaHoc" EntitySet="KhoaHocs" />
+      <End Role="HocVienKhoaHoc" EntitySet="HocVienKhoaHocs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HocVienKhoaHoc_NguoiDung" Association="QuanLyTrungTamModel.FK_HocVienKhoaHoc_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="HocVienKhoaHoc" EntitySet="HocVienKhoaHocs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KhoaHoc_NguoiDung" Association="QuanLyTrungTamModel.FK_KhoaHoc_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="KhoaHoc" EntitySet="KhoaHocs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NguoiDung_LoaiNguoiDung" Association="QuanLyTrungTamModel.FK_NguoiDung_LoaiNguoiDung">
+      <End Role="LoaiNguoiDung" EntitySet="LoaiNguoiDungs" />
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="HocVienKhoaHoc">
+    <Key>
+      <PropertyRef Name="MaKhoaHoc" />
+      <PropertyRef Name="TaiKhoan" />
+    </Key>
+    <Property Name="MaKhoaHoc" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TaiKhoan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgayGhiDanh" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="KhoaHoc" Relationship="QuanLyTrungTamModel.FK_HocVienKhoaHoc_KhoaHoc" FromRole="HocVienKhoaHoc" ToRole="KhoaHoc" />
+    <NavigationProperty Name="NguoiDung" Relationship="QuanLyTrungTamModel.FK_HocVienKhoaHoc_NguoiDung" FromRole="HocVienKhoaHoc" ToRole="NguoiDung" />
+  </EntityType>
+  <EntityType Name="KhoaHoc">
+    <Key>
+      <PropertyRef Name="MaKhoaHoc" />
+    </Key>
+    <Property Name="MaKhoaHoc" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenKhoaHoc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LuotXem" Type="Int32" />
+    <Property Name="NguoiTao" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HinhAnh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HocVienKhoaHocs" Relationship="QuanLyTrungTamModel.FK_HocVienKhoaHoc_KhoaHoc" FromRole="KhoaHoc" ToRole="HocVienKhoaHoc" />
+    <NavigationProperty Name="NguoiDung" Relationship="QuanLyTrungTamModel.FK_KhoaHoc_NguoiDung" FromRole="KhoaHoc" ToRole="NguoiDung" />
+  </EntityType>
+  <EntityType Name="LoaiNguoiDung">
+    <Key>
+      <PropertyRef Name="MaLoaiNguoiDung" />
+    </Key>
+    <Property Name="MaLoaiNguoiDung" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TenLoaiNguoiDung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NguoiDungs" Relationship="QuanLyTrungTamModel.FK_NguoiDung_LoaiNguoiDung" FromRole="LoaiNguoiDung" ToRole="NguoiDung" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="TaiKhoan" />
+    </Key>
+    <Property Name="TaiKhoan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="HoTen" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="SoDT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MaLoaiNguoiDung" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HocVienKhoaHocs" Relationship="QuanLyTrungTamModel.FK_HocVienKhoaHoc_NguoiDung" FromRole="NguoiDung" ToRole="HocVienKhoaHoc" />
+    <NavigationProperty Name="KhoaHocs" Relationship="QuanLyTrungTamModel.FK_KhoaHoc_NguoiDung" FromRole="NguoiDung" ToRole="KhoaHoc" />
+    <NavigationProperty Name="LoaiNguoiDung" Relationship="QuanLyTrungTamModel.FK_NguoiDung_LoaiNguoiDung" FromRole="NguoiDung" ToRole="LoaiNguoiDung" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_HocVienKhoaHoc_KhoaHoc">
+    <End Type="QuanLyTrungTamModel.KhoaHoc" Role="KhoaHoc" Multiplicity="1" />
+    <End Type="QuanLyTrungTamModel.HocVienKhoaHoc" Role="HocVienKhoaHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhoaHoc">
+        <PropertyRef Name="MaKhoaHoc" />
+      </Principal>
+      <Dependent Role="HocVienKhoaHoc">
+        <PropertyRef Name="MaKhoaHoc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HocVienKhoaHoc_NguoiDung">
+    <End Type="QuanLyTrungTamModel.NguoiDung" Role="NguoiDung" Multiplicity="1" />
+    <End Type="QuanLyTrungTamModel.HocVienKhoaHoc" Role="HocVienKhoaHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="TaiKhoan" />
+      </Principal>
+      <Dependent Role="HocVienKhoaHoc">
+        <PropertyRef Name="TaiKhoan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KhoaHoc_NguoiDung">
+    <End Type="QuanLyTrungTamModel.NguoiDung" Role="NguoiDung" Multiplicity="0..1" />
+    <End Type="QuanLyTrungTamModel.KhoaHoc" Role="KhoaHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="TaiKhoan" />
+      </Principal>
+      <Dependent Role="KhoaHoc">
+        <PropertyRef Name="NguoiTao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NguoiDung_LoaiNguoiDung">
+    <End Type="QuanLyTrungTamModel.LoaiNguoiDung" Role="LoaiNguoiDung" Multiplicity="0..1" />
+    <End Type="QuanLyTrungTamModel.NguoiDung" Role="NguoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiNguoiDung">
+        <PropertyRef Name="MaLoaiNguoiDung" />
+      </Principal>
+      <Dependent Role="NguoiDung">
+        <PropertyRef Name="MaLoaiNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

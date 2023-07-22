@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbSinhVienModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SinhVien">
+    <Key>
+      <PropertyRef Name="MaSV" />
+    </Key>
+    <Property Name="MaSV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="CMND" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiemToan" Type="int" />
+    <Property Name="DiemLy" Type="int" />
+    <Property Name="DiemHoa" Type="int" />
+  </EntityType>
+  <EntityType Name="SinhVienApi">
+    <Key>
+      <PropertyRef Name="maSinhVien" />
+    </Key>
+    <Property Name="maSinhVien" Type="int" Nullable="false" />
+    <Property Name="tenSinhVien" Type="nvarchar" MaxLength="255" />
+    <Property Name="loaiSinhVien" Type="nvarchar" MaxLength="255" />
+    <Property Name="diemToan" Type="int" />
+    <Property Name="diemLy" Type="int" />
+    <Property Name="diemHoa" Type="int" />
+    <Property Name="diemRenLuyen" Type="int" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="soDienThoai" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="dbSinhVienModelStoreContainer">
+    <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SinhVienApi" EntityType="Self.SinhVienApi" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

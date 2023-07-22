@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="dbSinhVienModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="MaSV" />
+          </Key>
+          <Property Name="MaSV" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoDT" Type="nvarchar" MaxLength="50" />
+          <Property Name="CMND" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiemToan" Type="int" />
+          <Property Name="DiemLy" Type="int" />
+          <Property Name="DiemHoa" Type="int" />
+        </EntityType>
+        <EntityType Name="SinhVienApi">
+          <Key>
+            <PropertyRef Name="maSinhVien" />
+          </Key>
+          <Property Name="maSinhVien" Type="int" Nullable="false" />
+          <Property Name="tenSinhVien" Type="nvarchar" MaxLength="255" />
+          <Property Name="loaiSinhVien" Type="nvarchar" MaxLength="255" />
+          <Property Name="diemToan" Type="int" />
+          <Property Name="diemLy" Type="int" />
+          <Property Name="diemHoa" Type="int" />
+          <Property Name="diemRenLuyen" Type="int" />
+          <Property Name="email" Type="nvarchar" MaxLength="255" />
+          <Property Name="soDienThoai" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityContainer Name="dbSinhVienModelStoreContainer">
+          <EntitySet Name="SinhVien" EntityType="Self.SinhVien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SinhVienApi" EntityType="Self.SinhVienApi" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="dbSinhVienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="SinhVien">
+          <Key>
+            <PropertyRef Name="MaSV" />
+          </Key>
+          <Property Name="MaSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SoDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CMND" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DiemToan" Type="Int32" />
+          <Property Name="DiemLy" Type="Int32" />
+          <Property Name="DiemHoa" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="dbSinhVienEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
+          <EntitySet Name="SinhVienApis" EntityType="dbSinhVienModel.SinhVienApi" />
+        </EntityContainer>
+        <EntityType Name="SinhVienApi">
+          <Key>
+            <PropertyRef Name="maSinhVien" />
+          </Key>
+          <Property Name="maSinhVien" Type="Int32" Nullable="false" />
+          <Property Name="tenSinhVien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="loaiSinhVien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="diemToan" Type="Int32" />
+          <Property Name="diemLy" Type="Int32" />
+          <Property Name="diemHoa" Type="Int32" />
+          <Property Name="diemRenLuyen" Type="Int32" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="soDienThoai" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="dbSinhVienModelStoreContainer" CdmEntityContainer="dbSinhVienEntities">
+          <EntitySetMapping Name="SinhViens">
+            <EntityTypeMapping TypeName="dbSinhVienModel.SinhVien">
+              <MappingFragment StoreEntitySet="SinhVien">
+                <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+                <ScalarProperty Name="CMND" ColumnName="CMND" />
+                <ScalarProperty Name="DiemToan" ColumnName="DiemToan" />
+                <ScalarProperty Name="DiemLy" ColumnName="DiemLy" />
+                <ScalarProperty Name="DiemHoa" ColumnName="DiemHoa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SinhVienApis">
+            <EntityTypeMapping TypeName="dbSinhVienModel.SinhVienApi">
+              <MappingFragment StoreEntitySet="SinhVienApi">
+                <ScalarProperty Name="soDienThoai" ColumnName="soDienThoai" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="diemRenLuyen" ColumnName="diemRenLuyen" />
+                <ScalarProperty Name="diemHoa" ColumnName="diemHoa" />
+                <ScalarProperty Name="diemLy" ColumnName="diemLy" />
+                <ScalarProperty Name="diemToan" ColumnName="diemToan" />
+                <ScalarProperty Name="loaiSinhVien" ColumnName="loaiSinhVien" />
+                <ScalarProperty Name="tenSinhVien" ColumnName="tenSinhVien" />
+                <ScalarProperty Name="maSinhVien" ColumnName="maSinhVien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

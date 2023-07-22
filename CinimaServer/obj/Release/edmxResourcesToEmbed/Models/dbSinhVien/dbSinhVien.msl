@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbSinhVienModelStoreContainer" CdmEntityContainer="dbSinhVienEntities">
+    <EntitySetMapping Name="SinhViens">
+      <EntityTypeMapping TypeName="dbSinhVienModel.SinhVien">
+        <MappingFragment StoreEntitySet="SinhVien">
+          <ScalarProperty Name="MaSV" ColumnName="MaSV" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="SoDT" ColumnName="SoDT" />
+          <ScalarProperty Name="CMND" ColumnName="CMND" />
+          <ScalarProperty Name="DiemToan" ColumnName="DiemToan" />
+          <ScalarProperty Name="DiemLy" ColumnName="DiemLy" />
+          <ScalarProperty Name="DiemHoa" ColumnName="DiemHoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SinhVienApis">
+      <EntityTypeMapping TypeName="dbSinhVienModel.SinhVienApi">
+        <MappingFragment StoreEntitySet="SinhVienApi">
+          <ScalarProperty Name="soDienThoai" ColumnName="soDienThoai" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="diemRenLuyen" ColumnName="diemRenLuyen" />
+          <ScalarProperty Name="diemHoa" ColumnName="diemHoa" />
+          <ScalarProperty Name="diemLy" ColumnName="diemLy" />
+          <ScalarProperty Name="diemToan" ColumnName="diemToan" />
+          <ScalarProperty Name="loaiSinhVien" ColumnName="loaiSinhVien" />
+          <ScalarProperty Name="tenSinhVien" ColumnName="tenSinhVien" />
+          <ScalarProperty Name="maSinhVien" ColumnName="maSinhVien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

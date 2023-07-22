@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6009E9BF-9C38-43BB-B992-C8ED89F390F8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CinimaServer</RootNamespace>
+    <AssemblyName>CinimaServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=6.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BinaryMediaTypeFormatter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebApi.BinaryMediaTypeFormatter.1.0.5\lib\BinaryMediaTypeFormatter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Cors, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Cors.3.1.0\lib\net45\Microsoft.Owin.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.6.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.2\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebApiContrib.Formatting.Jsonp, Version=3.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebApiContrib.Formatting.Jsonp.3.0.2\lib\net45\WebApiContrib.Formatting.Jsonp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllowCrossSiteJsonAttribute.cs" />
+    <Compile Include="Api\AjaxController.cs" />
+    <Compile Include="Api\ApiControllerBase.cs" />
+    <Compile Include="Api\CustomersController.cs" />
+    <Compile Include="Api\HomeController.cs" />
+    <Compile Include="Api\MovieController.cs" />
+    <Compile Include="Api\MoviesController.cs" />
+    <Compile Include="Api\ProductController.cs" />
+    <Compile Include="Api\QuanLyBanHangController.cs" />
+    <Compile Include="Api\QuanLyMenuController.cs" />
+    <Compile Include="Api\QuanLyNhanVienApiController.cs" />
+    <Compile Include="Api\QuanLyTrungTamController.cs" />
+    <Compile Include="Api\SinhVienApiController.cs" />
+    <Compile Include="Api\ToDoListController.cs" />
+    <Compile Include="Models\dbSinhVien\SinhVienApiModel.cs" />
+    <Compile Include="Api\SinhVienController.cs" />
+    <Compile Include="Api\UserController.cs" />
+    <Compile Include="Api\UserLoginController.cs" />
+    <Compile Include="Api\UserRegisterController.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Api\DemoAjaxController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountBindingModels.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BinhLuan.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietDonDatHang.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiTietPhieuNhap.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CinimaBooking.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CinimaRoom.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CinimaRoom_Movie.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Customer.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBMenu\dbMenuFood.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbMenuFood.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBMenu\dbMenuFood.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbMenuFood.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBMenu\dbMenuFood.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbMenuFood.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBMenu\Menu.cs">
+      <DependentUpon>dbMenuFood.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBMenu\QuanLyMenu.cs" />
+    <Compile Include="Models\dbQuanLyTrungTamModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbQuanLyTrungTamModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbQuanLyTrungTamModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbQuanLyTrungTamModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbQuanLyTrungTamModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbQuanLyTrungTamModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbSinhVien\dbSinhVien.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSinhVien.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbSinhVien\dbSinhVien.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSinhVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbSinhVien\dbSinhVien.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbSinhVien.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbSinhVien\SinhVien.cs">
+      <DependentUpon>dbSinhVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbSinhVien\SinhVienApi.cs">
+      <DependentUpon>dbSinhVien.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBStore\DbStoreModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbStoreModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBStore\DbStoreModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbStoreModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBStore\DbStoreModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbStoreModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DBStore\Product.cs">
+      <DependentUpon>DbStoreModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DonDatHang.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Error.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Genre.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HocVienKhoaHoc.cs">
+      <DependentUpon>dbQuanLyTrungTamModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HomeCinimaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeCinimaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HomeCinimaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HomeCinimaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeCinimaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HomeCinimaVM\MovieVM.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\KhachHang.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\KhoaHoc.cs">
+      <DependentUpon>dbQuanLyTrungTamModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoaiNguoiDung.cs">
+      <DependentUpon>dbQuanLyTrungTamModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoaiSanPham.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoaiThanhVien.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoaiThanhVien_Quyen.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Movie.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NguoiDung.cs">
+      <DependentUpon>dbQuanLyTrungTamModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhaCungCap.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NhaSanXuat.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhieuNhap.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLNV\NhanVien.cs">
+      <DependentUpon>QuanLyNhanVienModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLNV\QuanLyNhanVienModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhanVienModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLNV\QuanLyNhanVienModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhanVienModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QLNV\QuanLyNhanVienModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyNhanVienModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QuanLyBanHangModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBanHangModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QuanLyBanHangModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\QuanLyBanHangModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBanHangModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Quyen.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Rental.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SanPham.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Seat.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Stock.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Task\Task.cs">
+      <DependentUpon>todolist.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Task\todolist.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>todolist.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Task\todolist.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>todolist.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Task\todolist.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>todolist.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThanhVien.cs">
+      <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModelQuiz\CauHoi.cs" />
+    <Compile Include="Models\ViewModelQuiz\CauTraLoi.cs" />
+    <Compile Include="Models\ViewModel\USERFRONTENDXX.cs" />
+    <Compile Include="Models\UserRole.cs">
+      <DependentUpon>HomeCinimaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ViewModel\CinimaRoomDetail.cs" />
+    <Compile Include="Models\ViewModel\CinimaRooms.cs" />
+    <Compile Include="Models\ViewModel\JsonData.cs" />
+    <Compile Include="Models\ViewModel\ListBookingTickets.cs" />
+    <Compile Include="Models\ViewModel\MovieDetails.cs" />
+    <Compile Include="Models\ViewModel\MovieViewModel.cs" />
+    <Compile Include="Models\ViewModel\PaginationSet.cs" />
+    <Compile Include="Models\ViewModel\Seats.cs" />
+    <Compile Include="Models\ViewModel\ShowTimes.cs" />
+    <Compile Include="Models\ViewModel\test.cs" />
+    <Compile Include="Models\ViewModel\test2.cs" />
+    <Compile Include="Models\ViewModel\Tickets.cs" />
+    <Compile Include="Models\ViewModel\UserLogin.cs" />
+    <Compile Include="Models\ViewModel\UserRegister.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="Tools\Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\movies\1.png" />
+    <Content Include="images\movies\antman.jpg" />
+    <Content Include="images\movies\background.jpg" />
+    <Content Include="images\movies\batmanvssuperman.jpg" />
+    <Content Include="images\movies\betafish.jpg" />
+    <Content Include="images\movies\edgeoftomorrow.jpg" />
+    <Content Include="images\movies\fantasticfour.jpg" />
+    <Content Include="images\movies\home.jpg" />
+    <Content Include="images\movies\insideout.jpg" />
+    <Content Include="images\movies\jurassicworld.jpg" />
+    <Content Include="images\movies\madmax.jpg" />
+    <Content Include="images\movies\minions.jpg" />
+    <Content Include="images\movies\southpaw.jpg" />
+    <Content Include="images\movies\spectre.jpg" />
+    <Content Include="images\movies\ted2.jpg" />
+    <Content Include="images\movies\thelongestride.jpg" />
+    <Content Include="images\movies\thewalkingdead.jpg" />
+    <Content Include="images\movies\trainwreck.jpg" />
+    <Content Include="images\movies\truedetective.jpg" />
+    <Content Include="images\movies\unknown.jpg" />
+    <Content Include="images\movies\Wallpaper 8.png" />
+    <Content Include="images\qltt\c.jpg" />
+    <Content Include="images\qltt\dd.png" />
+    <Content Include="images\qltt\frontend.jpg" />
+    <Content Include="images\qltt\web.jpg" />
+    <Content Include="images\raty\star-half-big.png" />
+    <Content Include="images\raty\star-half.png" />
+    <Content Include="images\raty\star-off-big.png" />
+    <Content Include="images\raty\star-off.png" />
+    <Content Include="images\raty\star-on-big.png" />
+    <Content Include="images\raty\star-on.png" />
+    <Content Include="images\sanpham\0201_Sonyvaiopro13-1.jpg" />
+    <Content Include="images\sanpham\1-141023232635.jpg" />
+    <Content Include="images\sanpham\1.jpg" />
+    <Content Include="images\sanpham\12226700_1009231122431681_1745030512_n.jpg" />
+    <Content Include="images\sanpham\12231372_1009226802432113_1184438083_n.jpg" />
+    <Content Include="images\sanpham\1397272_5b1684c5cdf18acf2aa3d4478c3b3975.jpg" />
+    <Content Include="images\sanpham\150608_iphone_concept_1.jpg" />
+    <Content Include="images\sanpham\321321.jpg" />
+    <Content Include="images\sanpham\324493-sony-vaio-pro-11.jpg" />
+    <Content Include="images\sanpham\ACER-2215i.png" />
+    <Content Include="images\sanpham\AcerA1-810-2CW-316T.png" />
+    <Content Include="images\sanpham\AcerA1-811-G2CG-316T.png" />
+    <Content Include="images\sanpham\AcerA101-16GB.png" />
+    <Content Include="images\sanpham\AcerA101-Red.png" />
+    <Content Include="images\sanpham\AcerB1-A71-83170501NK.png" />
+    <Content Include="images\sanpham\AcerE1-432.png" />
+    <Content Include="images\sanpham\AcerE1-470-01.png" />
+    <Content Include="images\sanpham\AcerE1-470-02.png" />
+    <Content Include="images\sanpham\AcerE1-470G.png" />
+    <Content Include="images\sanpham\AcerE1-472.png" />
+    <Content Include="images\sanpham\AcerE1-572.png" />
+    <Content Include="images\sanpham\AcerIconiaTabW511.png" />
+    <Content Include="images\sanpham\AcerP3-171.png" />
+    <Content Include="images\sanpham\AcerTAB-A101.png" />
+    <Content Include="images\sanpham\AcerTAB-A501.png" />
+    <Content Include="images\sanpham\AcerV3-471.png" />
+    <Content Include="images\sanpham\AcerV5-471.png" />
+    <Content Include="images\sanpham\AcerV5-471G.png" />
+    <Content Include="images\sanpham\AcerW501.png" />
+    <Content Include="images\sanpham\AcerW510-27602G06ISS.png" />
+    <Content Include="images\sanpham\AcerW511-27602G06ASS.png" />
+    <Content Include="images\sanpham\AP-ME294ZP.png" />
+    <Content Include="images\sanpham\AppleMC975ZP-A.png" />
+    <Content Include="images\sanpham\AppleMC976ZP-A.png" />
+    <Content Include="images\sanpham\AppleMD101ZP-A.png" />
+    <Content Include="images\sanpham\AppleMD102ZP-A.png" />
+    <Content Include="images\sanpham\AppleMD103ZP-A.png" />
+    <Content Include="images\sanpham\AppleMD104ZP-A.png" />
+    <Content Include="images\sanpham\AppleMD223ZP-A.png" />
+    <Content Include="images\sanpham\AppleMD224ZP-A.png" />
+    <Content Include="images\sanpham\AppleMD231ZP-A.png" />
+    <Content Include="images\sanpham\AppleMD232ZP-A.png" />
+    <Content Include="images\sanpham\Apple_iPad_Air_Silver_600_lq_0001.jpg" />
+    <Content Include="images\sanpham\Apple_MBA11_LW007.jpg74ddbdf5-e3ab-4f55-883f-2a7ca1f52652Original.jpg" />
+    <Content Include="images\sanpham\ASUS-S1750.png" />
+    <Content Include="images\sanpham\Asus10-ME102A.png" />
+    <Content Include="images\sanpham\asus3.jpg" />
+    <Content Include="images\sanpham\asus4.png" />
+    <Content Include="images\sanpham\AsusF451CA-VX123D.png" />
+    <Content Include="images\sanpham\ASUSFONEPADME371MG.png" />
+    <Content Include="images\sanpham\AsusME175CG-8G.png" />
+    <Content Include="images\sanpham\AsusME180A-8G.png" />
+    <Content Include="images\sanpham\AsusME372CG-16G.png" />
+    <Content Include="images\sanpham\AsusME372CG-8G.png" />
+    <Content Include="images\sanpham\AsusME560CG-1A052A-32G.png" />
+    <Content Include="images\sanpham\AsusME560CG-1B052A-32G.png" />
+    <Content Include="images\sanpham\AsusME571K-1C018A-8G.png" />
+    <Content Include="images\sanpham\AsusX450CC-WX009.png" />
+    <Content Include="images\sanpham\AsusX450CC-WX016.png" />
+    <Content Include="images\sanpham\AsusX450L-WX014D.png" />
+    <Content Include="images\sanpham\AsusX450L-WX035D.png" />
+    <Content Include="images\sanpham\AsusX450LA-WX021.png" />
+    <Content Include="images\sanpham\AsusX450LA-WX022D.png" />
+    <Content Include="images\sanpham\AsusX450LC-WX035.png" />
+    <Content Include="images\sanpham\AsusX550CC-XO032D.png" />
+    <Content Include="images\sanpham\AsusX550LD-XX144D.png" />
+    <Content Include="images\sanpham\asus_1.jpg" />
+    <Content Include="images\sanpham\asus_2.png" />
+    <Content Include="images\sanpham\b31.jpg" />
+    <Content Include="images\sanpham\Blackberry9220.png" />
+    <Content Include="images\sanpham\Blackberry9320.png" />
+    <Content Include="images\sanpham\Blackberry9790.png" />
+    <Content Include="images\sanpham\BlackBerryCurve9220.png" />
+    <Content Include="images\sanpham\BlackberryQ10.png" />
+    <Content Include="images\sanpham\BlackberryZ10.png" />
+    <Content Include="images\sanpham\BlackberryZ30.png" />
+    <Content Include="images\sanpham\cubotvip.png" />
+    <Content Include="images\sanpham\cubot_x15_1.jpg" />
+    <Content Include="images\sanpham\cubot_x15_2.jpg" />
+    <Content Include="images\sanpham\cubot_x15_3.jpg" />
+    <Content Include="images\sanpham\cubot_x15_4.jpg" />
+    <Content Include="images\sanpham\cubot_x15_5.jpg" />
+    <Content Include="images\sanpham\cubox15_1.png" />
+    <Content Include="images\sanpham\cubox15_2.png" />
+    <Content Include="images\sanpham\cubox15_3.png" />
+    <Content Include="images\sanpham\cubox15_4.png" />
+    <Content Include="images\sanpham\DELL-11721PS.png" />
+    <Content Include="images\sanpham\DELL-9943XL.png" />
+    <Content Include="images\sanpham\DELL14-3437.png" />
+    <Content Include="images\sanpham\DELL14R-D8MMY1.png" />
+    <Content Include="images\sanpham\DELL15-52GNP1.png" />
+    <Content Include="images\sanpham\DELL15-52GNP4.png" />
+    <Content Include="images\sanpham\DELL15-7537.png" />
+    <Content Include="images\sanpham\DELL15-N3521.png" />
+    <Content Include="images\sanpham\DELL15R-5537.png" />
+    <Content Include="images\sanpham\DELL3440.png" />
+    <Content Include="images\sanpham\DELLN3437A.png" />
+    <Content Include="images\sanpham\DELLN5437A.png" />
+    <Content Include="images\sanpham\design_hero.jpg" />
+    <Content Include="images\sanpham\GalaxyG7102.png" />
+    <Content Include="images\sanpham\GalaxyK-Zoom.png" />
+    <Content Include="images\sanpham\GalaxyN9000.png" />
+    <Content Include="images\sanpham\GalaxyNote-10-P601.png" />
+    <Content Include="images\sanpham\GalaxyNote-8-N5100.png" />
+    <Content Include="images\sanpham\GalaxyNote3-Neo.png" />
+    <Content Include="images\sanpham\GalaxyNotePro-12-2.png" />
+    <Content Include="images\sanpham\GalaxyS4-I9500.png" />
+    <Content Include="images\sanpham\GalaxyS5.png" />
+    <Content Include="images\sanpham\GalaxyS7392.png" />
+    <Content Include="images\sanpham\GalaxyS7580.png" />
+    <Content Include="images\sanpham\GalaxyTab-3-10-P5200.png" />
+    <Content Include="images\sanpham\GalaxyTab-3-8-T311.png" />
+    <Content Include="images\sanpham\GalaxyTab-3-Lite7-3G.png" />
+    <Content Include="images\sanpham\GalaxyTab-3-Lite7-Wifi.png" />
+    <Content Include="images\sanpham\GalaxyTab-4-10-T531.png" />
+    <Content Include="images\sanpham\GalaxyTab-4-7.png" />
+    <Content Include="images\sanpham\GalaxyTab-4-8-T331.png" />
+    <Content Include="images\sanpham\GalaxyY-S5360.png" />
+    <Content Include="images\sanpham\Gear2-Neo.png" />
+    <Content Include="images\sanpham\GoogleNexus7-16G.png" />
+    <Content Include="images\sanpham\GoogleNexus7-32G.png" />
+    <Content Include="images\sanpham\HP-3175.png" />
+    <Content Include="images\sanpham\HP-3421s.png" />
+    <Content Include="images\sanpham\HP1000-1404TU.png" />
+    <Content Include="images\sanpham\HP1000-1418TU.png" />
+    <Content Include="images\sanpham\HP14-b068TX.png" />
+    <Content Include="images\sanpham\HP14-d008TU.png" />
+    <Content Include="images\sanpham\HP14-d009TU.png" />
+    <Content Include="images\sanpham\HP14-d010TU.png" />
+    <Content Include="images\sanpham\HP15-D062TU.png" />
+    <Content Include="images\sanpham\HP15-N052TX.png" />
+    <Content Include="images\sanpham\HP4-1214TU.png" />
+    <Content Include="images\sanpham\HP450-D5J85PA.png" />
+    <Content Include="images\sanpham\HTC-8S.png" />
+    <Content Include="images\sanpham\HTC-8X.png" />
+    <Content Include="images\sanpham\HTC-L.png" />
+    <Content Include="images\sanpham\HTC-OneM8.png" />
+    <Content Include="images\sanpham\HTC-U.png" />
+    <Content Include="images\sanpham\HTC310.png" />
+    <Content Include="images\sanpham\HTC700.png" />
+    <Content Include="images\sanpham\HTCONE-32G.png" />
+    <Content Include="images\sanpham\HTCONE-GOLD-32G.png" />
+    <Content Include="images\sanpham\HTCONE-M8.png" />
+    <Content Include="images\sanpham\HTCSV.png" />
+    <Content Include="images\sanpham\htc_one_1.JPG" />
+    <Content Include="images\sanpham\htc_one_1.png" />
+    <Content Include="images\sanpham\htc_one_2.jpg" />
+    <Content Include="images\sanpham\htc_one_2.png" />
+    <Content Include="images\sanpham\htc_one_3.jpg" />
+    <Content Include="images\sanpham\htc_one_3.png" />
+    <Content Include="images\sanpham\htc_one_4.jpg" />
+    <Content Include="images\sanpham\htc_one_4.png" />
+    <Content Include="images\sanpham\htc_one_5.jpg" />
+    <Content Include="images\sanpham\htc_one_6.jpg" />
+    <Content Include="images\sanpham\htc_one_7.jpg" />
+    <Content Include="images\sanpham\htc_one_8.JPG" />
+    <Content Include="images\sanpham\ipad air blue.jpg" />
+    <Content Include="images\sanpham\Ipad-ME840TH.png" />
+    <Content Include="images\sanpham\IpadAir-32G.png" />
+    <Content Include="images\sanpham\IpadAir-Cellular-128G.png" />
+    <Content Include="images\sanpham\IpadAir-Cellular-16G.png" />
+    <Content Include="images\sanpham\IpadMini-128G.png" />
+    <Content Include="images\sanpham\IpadMini-16G.png" />
+    <Content Include="images\sanpham\IpadMini-32G.png" />
+    <Content Include="images\sanpham\IpadMini-64G.png" />
+    <Content Include="images\sanpham\IpadMini-Cellular-16G.png" />
+    <Content Include="images\sanpham\IpadMini-Cellular-32G.png" />
+    <Content Include="images\sanpham\IpadMini-Cellular-64G.png" />
+    <Content Include="images\sanpham\ipad_air_1.png" />
+    <Content Include="images\sanpham\ipad_air_2.png" />
+    <Content Include="images\sanpham\ipad_air_3.png" />
+    <Content Include="images\sanpham\ipad_air_4.png" />
+    <Content Include="images\sanpham\iphone-6-201421010614.jpg" />
+    <Content Include="images\sanpham\iphone-7-concept-display-design-hello_UTMY.jpg" />
+    <Content Include="images\sanpham\iPhone-7-Images-8.jpg" />
+    <Content Include="images\sanpham\Iphone4-8G.png" />
+    <Content Include="images\sanpham\Iphone4S-8G.png" />
+    <Content Include="images\sanpham\Iphone5-16G.png" />
+    <Content Include="images\sanpham\Iphone5-32G.png" />
+    <Content Include="images\sanpham\Iphone5C.png" />
+    <Content Include="images\sanpham\Iphone5S-16G-GOLD.png" />
+    <Content Include="images\sanpham\Iphone5S-16G.PNG" />
+    <Content Include="images\sanpham\Iphone5S-32G-GOLD.png" />
+    <Content Include="images\sanpham\Iphone5S-64G.PNG" />
+    <Content Include="images\sanpham\iphone_1.png" />
+    <Content Include="images\sanpham\iphone_2.png" />
+    <Content Include="images\sanpham\iphone_3.png" />
+    <Content Include="images\sanpham\iphone_4.png" />
+    <Content Include="images\sanpham\l84208-macbook-pro-13-inch-43364.jpg" />
+    <Content Include="images\sanpham\large_apple_macbook_air_13_inch_retina_3d_model_fbx_c4d_obj_hrc_xsi_max_cb5de0c0-ddf7-4684-896d-7d68ae017f13.jpg" />
+    <Content Include="images\sanpham\lg-g-flex-smartphone-leak-photos.jpg" />
+    <Content Include="images\sanpham\LGG-686.png" />
+    <Content Include="images\sanpham\LGG-D682.png" />
+    <Content Include="images\sanpham\LGG-E988.png" />
+    <Content Include="images\sanpham\LGG-Flex.png" />
+    <Content Include="images\sanpham\LGG-Pro2.png" />
+    <Content Include="images\sanpham\LGG2-32G.png" />
+    <Content Include="images\sanpham\LGG2-D802-16G.png" />
+    <Content Include="images\sanpham\LGG2.png" />
+    <Content Include="images\sanpham\LGL70.png" />
+    <Content Include="images\sanpham\LGL90.png" />
+    <Content Include="images\sanpham\LGOptimusSolE730.png" />
+    <Content Include="images\sanpham\logo.png" />
+    <Content Include="images\sanpham\Lumia920.png" />
+    <Content Include="images\sanpham\m9plus.png" />
+    <Content Include="images\sanpham\MacBook-Air-1024x515.png" />
+    <Content Include="images\sanpham\macbook-air-retina.jpg" />
+    <Content Include="images\sanpham\macbook_1.png" />
+    <Content Include="images\sanpham\macbook_2.png" />
+    <Content Include="images\sanpham\macbook_3.png" />
+    <Content Include="images\sanpham\macbook_4.png" />
+    <Content Include="images\sanpham\MacBook_air_11_550.jpg" />
+    <Content Include="images\sanpham\macbook_pro_1.png" />
+    <Content Include="images\sanpham\macbook_pro_2.png" />
+    <Content Include="images\sanpham\macbook_pro_3.png" />
+    <Content Include="images\sanpham\macbook_pro_4.png" />
+    <Content Include="images\sanpham\macpro.png" />
+    <Content Include="images\sanpham\mac_air_1.png" />
+    <Content Include="images\sanpham\maxresdefault.jpg" />
+    <Content Include="images\sanpham\New-Samsung-Rumors.jpg" />
+    <Content Include="images\sanpham\NokiaLumia-1020.png" />
+    <Content Include="images\sanpham\NokiaLumia-1320-2.png" />
+    <Content Include="images\sanpham\NokiaLumia-1320.png" />
+    <Content Include="images\sanpham\NokiaLumia-1520.png" />
+    <Content Include="images\sanpham\NokiaLumia-525.png" />
+    <Content Include="images\sanpham\NokiaLumia-625.png" />
+    <Content Include="images\sanpham\NokiaLumia-630.png" />
+    <Content Include="images\sanpham\NokiaLumia-920.png" />
+    <Content Include="images\sanpham\NokiaLumia-925.png" />
+    <Content Include="images\sanpham\NokiaX.png" />
+    <Content Include="images\sanpham\perfektes-Smartphone_qu.jpg" />
+    <Content Include="images\sanpham\pre-order-iphone6.jpg" />
+    <Content Include="images\sanpham\Samsung-4401s.png" />
+    <Content Include="images\sanpham\samsung-galaxy-tab-s-10.5-retail-1-e1419704627986.jpg" />
+    <Content Include="images\sanpham\samsung-galaxy-tab-s-best-android-tablets-2015-images.jpg" />
+    <Content Include="images\sanpham\samsung-galaxy-tab-s.jpg" />
+    <Content Include="images\sanpham\Samsung300E7A-S03.png" />
+    <Content Include="images\sanpham\Samsung5-535U3X.png" />
+    <Content Include="images\sanpham\Samsung900X3A.png" />
+    <Content Include="images\sanpham\SAMSUNGGALAXY3LITESM-T111.png" />
+    <Content Include="images\sanpham\SamSunggalaxyS5-SMG900H.png" />
+    <Content Include="images\sanpham\SamsungNP270E4V-K01VN.png" />
+    <Content Include="images\sanpham\SamsungNP270E4V-X01VN.png" />
+    <Content Include="images\sanpham\SamsungNP530U4E-K01VN.png" />
+    <Content Include="images\sanpham\SamsungNP540U4E-K01VN.png" />
+    <Content Include="images\sanpham\SamsungNP700Z3A-S01US.png" />
+    <Content Include="images\sanpham\SamsungNP900X3C.png" />
+    <Content Include="images\sanpham\SamsungXE700T1C-A01VN.png" />
+    <Content Include="images\sanpham\Samsung_Note_Pro_3_0_0 %281%29.jpg" />
+    <Content Include="images\sanpham\sony-vaio-sve-1513b1ew.jpg" />
+    <Content Include="images\sanpham\sony-vaio-T14_Silver-2.jpg" />
+    <Content Include="images\sanpham\Sony-Vio7431.png" />
+    <Content Include="images\sanpham\SonyVaio-SVF14217SGB.png" />
+    <Content Include="images\sanpham\SonyVaio-SVF1421DSGB.png" />
+    <Content Include="images\sanpham\SonyVaio-SVF1421ESGB.png" />
+    <Content Include="images\sanpham\SonyVaio-SVF1421ESGW.png" />
+    <Content Include="images\sanpham\SonyVaio-SVF1421QSGB.png" />
+    <Content Include="images\sanpham\SonyVaio-SVF1421QSGW.png" />
+    <Content Include="images\sanpham\SonyVaio-SVF1521DSGB.png" />
+    <Content Include="images\sanpham\SonyVaio-SVP13223SGB.png" />
+    <Content Include="images\sanpham\SonyVaio-SVP13223SGW.png" />
+    <Content Include="images\sanpham\SonyVaio-SVT11215SGB.png" />
+    <Content Include="images\sanpham\SonyXperia-C-C2305.png" />
+    <Content Include="images\sanpham\SonyXperia-E-C1505.png" />
+    <Content Include="images\sanpham\SonyXperia-E1.png" />
+    <Content Include="images\sanpham\SonyXperia-L-C2105.png" />
+    <Content Include="images\sanpham\SonyXperia-L-MT25I.png" />
+    <Content Include="images\sanpham\SonyXperia-M-C1905.png" />
+    <Content Include="images\sanpham\SonyXperia-M2-D2305.png" />
+    <Content Include="images\sanpham\SonyXperia-ST23I.png" />
+    <Content Include="images\sanpham\SonyXperia-TX-LT29I.png" />
+    <Content Include="images\sanpham\SonyXperia-V-LT25I.png" />
+    <Content Include="images\sanpham\SonyXperia-Z.png" />
+    <Content Include="images\sanpham\SonyXperia-Z2.png" />
+    <Content Include="images\sanpham\SONYXPERIAZ-SGP321.png" />
+    <Content Include="images\sanpham\SonyXperiaZ.png" />
+    <Content Include="images\sanpham\SQL.txt" />
+    <Content Include="images\sanpham\tablet_ss_1.png" />
+    <Content Include="images\sanpham\tablet_ss_2.png" />
+    <Content Include="images\sanpham\tablet_ss_3.png" />
+    <Content Include="images\sanpham\TOSHIBA-SYM0510.png" />
+    <Content Include="images\sanpham\Ultimate-Smartphone-01 %281%29.jpg" />
+    <Content Include="images\sanpham\Ultimate-Smartphone-01.jpg" />
+    <Content Include="images\sanpham\untilmate_phone_1.png" />
+    <Content Include="images\sanpham\untilmate_phone_2.png" />
+    <Content Include="images\sanpham\untilmate_phone_3.png" />
+    <Content Include="images\sanpham\untilmate_phone_4.jpg" />
+    <Content Include="images\sanpham\vaio_1.png" />
+    <Content Include="images\sanpham\vaio_2.png" />
+    <Content Include="images\sanpham\vaio_3.png" />
+    <Content Include="images\sanpham\vaio_4.png" />
+    <Content Include="Models\DBMenu\dbMenuFood.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbMenuFood.edmx</DependentUpon>
+      <LastGenOutput>dbMenuFood.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DBMenu\dbMenuFood.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbMenuFood.edmx</DependentUpon>
+      <LastGenOutput>dbMenuFood.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\dbQuanLyTrungTamModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbQuanLyTrungTamModel.edmx</DependentUpon>
+      <LastGenOutput>dbQuanLyTrungTamModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\dbQuanLyTrungTamModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbQuanLyTrungTamModel.edmx</DependentUpon>
+      <LastGenOutput>dbQuanLyTrungTamModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\dbSinhVien\dbSinhVien.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbSinhVien.edmx</DependentUpon>
+      <LastGenOutput>dbSinhVien.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\dbSinhVien\dbSinhVien.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbSinhVien.edmx</DependentUpon>
+      <LastGenOutput>dbSinhVien.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DBStore\DbStoreModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbStoreModel.edmx</DependentUpon>
+      <LastGenOutput>DbStoreModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DBStore\DbStoreModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbStoreModel.edmx</DependentUpon>
+      <LastGenOutput>DbStoreModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HomeCinimaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HomeCinimaModel.edmx</DependentUpon>
+      <LastGenOutput>HomeCinimaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HomeCinimaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HomeCinimaModel.edmx</DependentUpon>
+      <LastGenOutput>HomeCinimaModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QLNV\QuanLyNhanVienModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyNhanVienModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyNhanVienModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QLNV\QuanLyNhanVienModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyNhanVienModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyNhanVienModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QuanLyBanHangModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyBanHangModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyBanHangModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QuanLyBanHangModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyBanHangModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyBanHangModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Task\todolist.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>todolist.edmx</DependentUpon>
+      <LastGenOutput>todolist.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Task\todolist.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>todolist.edmx</DependentUpon>
+      <LastGenOutput>todolist.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\HomeCinimaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HomeCinimaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\HomeCinimaModel.edmx.diagram">
+      <DependentUpon>HomeCinimaModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\dbSinhVien\dbSinhVien.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbSinhVien.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\dbSinhVien\dbSinhVien.edmx.diagram">
+      <DependentUpon>dbSinhVien.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\dbQuanLyTrungTamModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbQuanLyTrungTamModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\dbQuanLyTrungTamModel.edmx.diagram">
+      <DependentUpon>dbQuanLyTrungTamModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\QuanLyBanHangModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLyBanHangModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\QuanLyBanHangModel.edmx.diagram">
+      <DependentUpon>QuanLyBanHangModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\DBMenu\dbMenuFood.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbMenuFood.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DBMenu\dbMenuFood.edmx.diagram">
+      <DependentUpon>dbMenuFood.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Task\todolist.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>todolist.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Task\todolist.edmx.diagram">
+      <DependentUpon>todolist.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\QLNV\QuanLyNhanVienModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLyNhanVienModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\QLNV\QuanLyNhanVienModel.edmx.diagram">
+      <DependentUpon>QuanLyNhanVienModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\DBStore\DbStoreModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DbStoreModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DBStore\DbStoreModel.edmx.diagram">
+      <DependentUpon>DbStoreModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\ThongBaoLoi\" />
+    <Folder Include="Views\Ajax\" />
+    <Folder Include="Views\Movies\" />
+    <Folder Include="Views\QuanLyTrungTam\" />
+    <Folder Include="Views\UserRegister\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57407</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57407/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

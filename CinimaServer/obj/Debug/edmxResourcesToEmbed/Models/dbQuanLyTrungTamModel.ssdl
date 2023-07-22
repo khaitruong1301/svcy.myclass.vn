@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLyTrungTamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HocVienKhoaHoc">
+    <Key>
+      <PropertyRef Name="MaKhoaHoc" />
+      <PropertyRef Name="TaiKhoan" />
+    </Key>
+    <Property Name="MaKhoaHoc" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TaiKhoan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NgayGhiDanh" Type="datetime" />
+  </EntityType>
+  <EntityType Name="KhoaHoc">
+    <Key>
+      <PropertyRef Name="MaKhoaHoc" />
+    </Key>
+    <Property Name="MaKhoaHoc" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenKhoaHoc" Type="nvarchar" MaxLength="255" />
+    <Property Name="MoTa" Type="nvarchar(max)" />
+    <Property Name="LuotXem" Type="int" />
+    <Property Name="NguoiTao" Type="nvarchar" MaxLength="50" />
+    <Property Name="HinhAnh" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="LoaiNguoiDung">
+    <Key>
+      <PropertyRef Name="MaLoaiNguoiDung" />
+    </Key>
+    <Property Name="MaLoaiNguoiDung" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenLoaiNguoiDung" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="TaiKhoan" />
+    </Key>
+    <Property Name="TaiKhoan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MatKhau" Type="nvarchar" MaxLength="255" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="SoDT" Type="nvarchar" MaxLength="255" />
+    <Property Name="MaLoaiNguoiDung" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_HocVienKhoaHoc_KhoaHoc">
+    <End Role="KhoaHoc" Type="Self.KhoaHoc" Multiplicity="1" />
+    <End Role="HocVienKhoaHoc" Type="Self.HocVienKhoaHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhoaHoc">
+        <PropertyRef Name="MaKhoaHoc" />
+      </Principal>
+      <Dependent Role="HocVienKhoaHoc">
+        <PropertyRef Name="MaKhoaHoc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HocVienKhoaHoc_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
+    <End Role="HocVienKhoaHoc" Type="Self.HocVienKhoaHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="TaiKhoan" />
+      </Principal>
+      <Dependent Role="HocVienKhoaHoc">
+        <PropertyRef Name="TaiKhoan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KhoaHoc_NguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="0..1" />
+    <End Role="KhoaHoc" Type="Self.KhoaHoc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="TaiKhoan" />
+      </Principal>
+      <Dependent Role="KhoaHoc">
+        <PropertyRef Name="NguoiTao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NguoiDung_LoaiNguoiDung">
+    <End Role="LoaiNguoiDung" Type="Self.LoaiNguoiDung" Multiplicity="0..1" />
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiNguoiDung">
+        <PropertyRef Name="MaLoaiNguoiDung" />
+      </Principal>
+      <Dependent Role="NguoiDung">
+        <PropertyRef Name="MaLoaiNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QuanLyTrungTamModelStoreContainer">
+    <EntitySet Name="HocVienKhoaHoc" EntityType="Self.HocVienKhoaHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KhoaHoc" EntityType="Self.KhoaHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoaiNguoiDung" EntityType="Self.LoaiNguoiDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_HocVienKhoaHoc_KhoaHoc" Association="Self.FK_HocVienKhoaHoc_KhoaHoc">
+      <End Role="KhoaHoc" EntitySet="KhoaHoc" />
+      <End Role="HocVienKhoaHoc" EntitySet="HocVienKhoaHoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HocVienKhoaHoc_NguoiDung" Association="Self.FK_HocVienKhoaHoc_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="HocVienKhoaHoc" EntitySet="HocVienKhoaHoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KhoaHoc_NguoiDung" Association="Self.FK_KhoaHoc_NguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="KhoaHoc" EntitySet="KhoaHoc" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NguoiDung_LoaiNguoiDung" Association="Self.FK_NguoiDung_LoaiNguoiDung">
+      <End Role="LoaiNguoiDung" EntitySet="LoaiNguoiDung" />
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

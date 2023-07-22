@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLyNhanVienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="maNhanVien" />
+    </Key>
+    <Property Name="maNhanVien" Type="Int32" Nullable="false" />
+    <Property Name="tenNhanVien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="chucVu" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="heSoChucVu" Type="Int32" />
+    <Property Name="luongCoBan" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="soGioLamTrongThang" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="QuanLyNhanVienEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
+  </EntityContainer>
+</Schema>

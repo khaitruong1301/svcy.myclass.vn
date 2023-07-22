@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbSinhVienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SinhVien">
+    <Key>
+      <PropertyRef Name="MaSV" />
+    </Key>
+    <Property Name="MaSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoDT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CMND" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiemToan" Type="Int32" />
+    <Property Name="DiemLy" Type="Int32" />
+    <Property Name="DiemHoa" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="dbSinhVienEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SinhViens" EntityType="Self.SinhVien" />
+    <EntitySet Name="SinhVienApis" EntityType="dbSinhVienModel.SinhVienApi" />
+  </EntityContainer>
+  <EntityType Name="SinhVienApi">
+    <Key>
+      <PropertyRef Name="maSinhVien" />
+    </Key>
+    <Property Name="maSinhVien" Type="Int32" Nullable="false" />
+    <Property Name="tenSinhVien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="loaiSinhVien" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="diemToan" Type="Int32" />
+    <Property Name="diemLy" Type="Int32" />
+    <Property Name="diemHoa" Type="Int32" />
+    <Property Name="diemRenLuyen" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="soDienThoai" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
