@@ -24,4 +24,14 @@ namespace CinimaServer.Models.dbSinhVien
         public string email { get; set; }
         public string soDienThoai { get; set; }
     }
+    public partial class SinhVienModel
+    {
+        public int maSinhVien { get; set; }
+        public string tenSinhVien { get; set; }
+        public string loaiSinhVien { get; set; }
+        
+        public Nullable<int> diemRenLuyen { get; set; }
+        public string email { get; set; }
+        public string soDienThoai { get; set; }
+    }
 }

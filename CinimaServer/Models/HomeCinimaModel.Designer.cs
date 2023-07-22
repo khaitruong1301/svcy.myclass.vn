@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\sv\cinimaserver\sv.myclass.vn\CinimaServer\CinimaServer\Models\HomeCinimaModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\ASUS\Desktop\cybersoft\svcy.myclass.vn\CinimaServer\Models\HomeCinimaModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

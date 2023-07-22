@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CinimaServer</RootNamespace>
     <AssemblyName>CinimaServer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -238,11 +238,11 @@
     <Compile Include="Api\HomeController.cs" />
     <Compile Include="Api\MovieController.cs" />
     <Compile Include="Api\MoviesController.cs" />
-    <Compile Include="Api\ProductController.cs" />
     <Compile Include="Api\QuanLyBanHangController.cs" />
     <Compile Include="Api\QuanLyMenuController.cs" />
     <Compile Include="Api\QuanLyNhanVienApiController.cs" />
     <Compile Include="Api\QuanLyTrungTamController.cs" />
+    <Compile Include="Api\QuanLySinhVienController.cs" />
     <Compile Include="Api\SinhVienApiController.cs" />
     <Compile Include="Api\ToDoListController.cs" />
     <Compile Include="Models\dbSinhVien\SinhVienApiModel.cs" />
@@ -369,24 +369,6 @@
     </Compile>
     <Compile Include="Models\dbSinhVien\SinhVienApi.cs">
       <DependentUpon>dbSinhVien.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DBStore\DbStoreModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbStoreModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DBStore\DbStoreModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DBStore\DbStoreModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbStoreModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DBStore\Product.cs">
-      <DependentUpon>DbStoreModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DonDatHang.cs">
       <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
@@ -914,16 +896,6 @@
       <DependentUpon>dbSinhVien.edmx</DependentUpon>
       <LastGenOutput>dbSinhVien.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DBStore\DbStoreModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbStoreModel.edmx</DependentUpon>
-      <LastGenOutput>DbStoreModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\DBStore\DbStoreModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbStoreModel.edmx</DependentUpon>
-      <LastGenOutput>DbStoreModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Models\HomeCinimaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>HomeCinimaModel.edmx</DependentUpon>
@@ -1037,13 +1009,6 @@
     <Content Include="Models\QLNV\QuanLyNhanVienModel.edmx.diagram">
       <DependentUpon>QuanLyNhanVienModel.edmx</DependentUpon>
     </Content>
-    <EntityDeploy Include="Models\DBStore\DbStoreModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DbStoreModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\DBStore\DbStoreModel.edmx.diagram">
-      <DependentUpon>DbStoreModel.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1077,6 +1042,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\DBStore\" />
     <Folder Include="Models\ThongBaoLoi\" />
     <Folder Include="Views\Ajax\" />
     <Folder Include="Views\Movies\" />
