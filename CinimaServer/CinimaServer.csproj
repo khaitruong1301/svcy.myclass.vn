@@ -234,6 +234,7 @@
     <Compile Include="AllowCrossSiteJsonAttribute.cs" />
     <Compile Include="Api\AjaxController.cs" />
     <Compile Include="Api\ApiControllerBase.cs" />
+    <Compile Include="Api\CRUDProductController.cs" />
     <Compile Include="Api\CustomersController.cs" />
     <Compile Include="Api\HomeController.cs" />
     <Compile Include="Api\MovieController.cs" />
@@ -417,6 +418,21 @@
     <Compile Include="Models\LoaiThanhVien_Quyen.cs">
       <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\dbStoreModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbStoreModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Movie.cs">
       <DependentUpon>HomeCinimaModel.tt</DependentUpon>
     </Compile>
@@ -431,6 +447,9 @@
     </Compile>
     <Compile Include="Models\PhieuNhap.cs">
       <DependentUpon>QuanLyBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\QLNV\NhanVien.cs">
       <DependentUpon>QuanLyNhanVienModel.tt</DependentUpon>
@@ -906,6 +925,16 @@
       <DependentUpon>HomeCinimaModel.edmx</DependentUpon>
       <LastGenOutput>HomeCinimaModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbStoreModel.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbStoreModel.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\QLNV\QuanLyNhanVienModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QuanLyNhanVienModel.edmx</DependentUpon>
@@ -1009,6 +1038,13 @@
     <Content Include="Models\QLNV\QuanLyNhanVienModel.edmx.diagram">
       <DependentUpon>QuanLyNhanVienModel.edmx</DependentUpon>
     </Content>
+    <EntityDeploy Include="Models\dbStoreModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>dbStoreModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\dbStoreModel.edmx.diagram">
+      <DependentUpon>dbStoreModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -1042,7 +1078,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\DBStore\" />
+    <Folder Include="Models\dbStore\" />
     <Folder Include="Models\ThongBaoLoi\" />
     <Folder Include="Views\Ajax\" />
     <Folder Include="Views\Movies\" />
