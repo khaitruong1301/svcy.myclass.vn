@@ -10,6 +10,7 @@
     <Property Name="img" Type="nvarchar" MaxLength="255" />
     <Property Name="description" Type="nvarchar" MaxLength="255" />
     <Property Name="type" Type="nvarchar" MaxLength="255" />
+    <Property Name="deleted" Type="bit" />
   </EntityType>
   <EntityContainer Name="StoreDBModelStoreContainer">
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />

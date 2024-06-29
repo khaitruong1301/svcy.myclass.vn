@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="StoreDBModel.Product">
         <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="price" ColumnName="price" />

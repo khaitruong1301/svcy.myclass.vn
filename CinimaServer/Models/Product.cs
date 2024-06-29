@@ -20,5 +20,7 @@ namespace CinimaServer.Models
         public string img { get; set; }
         public string description { get; set; }
         public string type { get; set; }
+
+        public bool deleted { get; set; }
     }
 }

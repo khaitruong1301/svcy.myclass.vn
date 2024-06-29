@@ -23,9 +23,9 @@ namespace CinemaServer.Api
             if(keyword !="")
             {
                 keyword = FuncUtilities.BestLower(keyword);
-                return db.Products.ToList().Where(n => FuncUtilities.BestLower(n.name).Contains(keyword));
+                return db.Products.ToList().Where(n => FuncUtilities.BestLower(n.name).Contains(keyword) && n.deleted!=true);
             }
-            return db.Products;
+            return db.Products.Where(n=>n.deleted != true);
         }
 
         // GET: api/ProductApi/get/{id}
@@ -39,7 +39,7 @@ namespace CinemaServer.Api
                 return Content(HttpStatusCode.BadRequest, "ID sản phẩm không hợp lệ!");
             }
 
-            var product = await db.Products.SingleOrDefaultAsync(p => p.id == id);
+            var product = await db.Products.SingleOrDefaultAsync(p => p.id == id && p.deleted!=true);
             if (product == null)
             {
                 return Content(HttpStatusCode.NotFound, "Không tìm thấy sản phẩm!");
@@ -58,6 +58,7 @@ namespace CinemaServer.Api
             {
                 return Content(HttpStatusCode.BadRequest, "ID sản phẩm không hợp lệ!");
             }
+            product.deleted = false;
 
             db.Entry(product).State = EntityState.Modified;
 
@@ -86,10 +87,11 @@ namespace CinemaServer.Api
         [ResponseType(typeof(Product))]
         public async Task<IHttpActionResult> CreateProduct(Product product)
         {
-            if(db.Products.SingleOrDefault(n=>n.id == product.id) != null)
+            if(db.Products.SingleOrDefault(n=>n.id == product.id && n.deleted != true) != null)
             {
                 return Content(HttpStatusCode.Created, "Id đã tồn tại");
             }
+            product.deleted = false;
             db.Products.Add(product);
             await db.SaveChangesAsync();
 
@@ -108,7 +110,7 @@ namespace CinemaServer.Api
                 return Content(HttpStatusCode.NotFound, "Không tìm thấy sản phẩm!");
             }
 
-            db.Products.Remove(product);
+            product.deleted = true;
             await db.SaveChangesAsync();
 
             return Content(HttpStatusCode.OK,"Xoá sản phẩm thành công !");

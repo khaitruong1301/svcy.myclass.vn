@@ -10,6 +10,7 @@
     <Property Name="img" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="deleted" Type="Boolean" />
   </EntityType>
   <EntityContainer Name="StoreDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Products" EntityType="Self.Product" />
